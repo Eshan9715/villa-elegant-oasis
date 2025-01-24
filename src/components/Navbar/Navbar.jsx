@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/logor.png";
 import { motion } from "framer-motion";
 import CallIcon from '@mui/icons-material/Call';
@@ -60,6 +60,8 @@ const social = [
   
 ];
 const Navbar = () => {
+  const [isHamClick, setisHamClick] = useState(false);
+
   return (
     <div className="bg-[#231f20] w-full fixed z-50">
       <motion.div
@@ -75,7 +77,7 @@ const Navbar = () => {
         </div>
         {/* Link section */}
         <div className="flex flex-col gap-1.5">
-        <div className="hidden md:flex justify-between !space-x-12">
+        <div className="hidden lg:flex justify-between !space-x-12">
           {social.map((link) => {
             return (
               <div className="flex text-white mx-2 justify-start items-center gap-1">{link.icon}
@@ -90,7 +92,7 @@ const Navbar = () => {
           })}
         </div>
         <div className="h-0.5 w-full bg-slate-200"></div>
-        <div className="hidden md:flex justify-evenly !space-x-12">
+        <div className="hidden lg:flex justify-evenly !space-x-12">
           {NavLinks.map((link) => {
             return (
               <a
@@ -104,10 +106,36 @@ const Navbar = () => {
         </div>
         </div>
         {/* Button section */}
+        <div className="flex gap-3 justify-center items-center">
         <div>
           <a href='https://www.booking.com/hotel/lk/villa-elegant-oasis.html' target="_blank" rel="noopener noreferrer" className="primary-btn">Book Now</a>
         </div>
+        {!isHamClick ? <svg data-slot="icon" fill="none" stroke-width="1.5" onClick={()=>setisHamClick(!isHamClick)} className={`w-8 h-8 md:w-12 md:h-12 xl:hidden flex cursor-pointer text-white`} stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.  org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+            :
+            <svg data-slot="icon" fill="none" stroke-width="1.5" onClick={()=>setisHamClick(!isHamClick)} className={`w-8 h-8 md:w-12 md:h-12 xl:hidden flex cursor-pointer text-white`} stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.  org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+            </svg>    
+            }
+            </div>
       </motion.div>
+
+      {isHamClick && 
+            <div className='bg-white w-full overflow-y-auto xl:hidden flex flex-col gap-1 z-50 mt-[10px] p-3'>
+            {NavLinks.map((link) => {
+            return (
+              <a
+                href={link.link}
+                className="inline-block text-sm md:text-lg p-1 text-center hover:bg-slate-200"
+              >
+                {link.title}
+              </a>
+            );
+          })}
+
+          </div>}
+     
     </div>
   );
 };

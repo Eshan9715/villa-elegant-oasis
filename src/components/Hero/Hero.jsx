@@ -8,7 +8,6 @@ import villaMain4 from '../../assets/5.jpg'
 import villaMain5 from '../../assets/6.jpg'
 
 
-
 const Hero = () => {
 
     const data = [
@@ -38,7 +37,7 @@ const Hero = () => {
         }
 ]
   return (
-    <div className='h-[300px] md:h-[500px] w-full bg-black flex justify-center items-center mt-[93px] md:mt-[139px]'>
+    <div className='h-[300px] md:h-[500px] w-full bg-black flex justify-center items-center mt-[93px] md:mt-[100px] lg:mt-[120px]'>
         <img src={villaMain} alt='' className='h-full bg-cover w-full'/>
         <div className='container absolute z-10'>
         <SwiperWidjet data={data}/>

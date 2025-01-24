@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <p className="font-normal text-sm ">Discover the epitome of luxury by living in our exclusive pool villa near Horana. Southwest-facing, the villa enjoys abundant natural light, creating an inviting atmosphere. Ready to 
             move in and fully furnished, it features high-end finishes and contemporary design details.</p>
-            <p> &copy; 2025 Villa Elegant Oasis. All rights reserved</p>
+            <p className="hidden xl:flex"> &copy; 2025 Villa Elegant Oasis. All rights reserved</p>
           </div>
           {/* Footer Link */}
           <div className="grid grid-cols-2 gap-3">

@@ -60,10 +60,10 @@ const FAQPage = () =>{
             aria-controls={`panel${index}-content`}
             id={`panel${index}-header`}
           >
-            <p className='font-semibold text-[15px] md:text-[17px] font-serif text-gray-600'>{faq.question}</p>
+            <p className='font-semibold text-[15px] lg:text-[17px] font-serif text-gray-600'>{faq.question}</p>
           </AccordionSummary>
           <AccordionDetails>
-            <p className='text-[13px] md:text-base font-serif'>{faq.answer}</p>
+            <p className='text-[13px] lg:text-base font-serif'>{faq.answer}</p>
           </AccordionDetails>
         </Accordion>
       ))}
