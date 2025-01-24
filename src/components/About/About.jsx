@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 import { SlideUp } from "../../animation/animate";
 
 const About = () => {
+  const handleNavClick = (id) => {
+    const targetSection = document.getElementById(id);
+
+    window.scrollTo({
+      top: targetSection.offsetTop, 
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <motion.div
       variants={SlideUp(0.2)}
@@ -64,15 +73,15 @@ const About = () => {
                 variants={SlideUp(0.8)}
                 initial="initial"
                 animate="animate"
-                className="primary-btn uppercase bg-black text-white shadow-[5px_5px_0px_0px_#6c6c6c]"
+                className="primary-btn uppercase bg-black text-white shadow-[5px_5px_0px_0px_#6c6c6c]"  onClick={()=>handleNavClick("Gallery")}
               >
-                View More
+                View More 
               </motion.button>
               <motion.button
                 variants={SlideUp(1.1)}
                 initial="initial"
                 animate="animate"
-                className="primary-btn uppercase"
+                className="primary-btn uppercase" onClick={()=>handleNavClick("Location")}
               >
                 Contact Us
               </motion.button>
