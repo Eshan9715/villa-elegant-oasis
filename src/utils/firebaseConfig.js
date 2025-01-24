@@ -15,3 +15,13 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
+    // "predeploy": "npm run build",
+    // "deploy": "gh-pages -d dist",
+    // "homepage": "https://eshan9715/github.io/villa-elegant-oasis",
+
+
+
+
+
