@@ -37,7 +37,7 @@ const faqs = [
 
 const FAQPage = () =>{
   return (
-    <div className='container my-16' id="Faq">
+    <div className='container py-16' id="Faq">
       <motion.h1
               variants={SlideUp(0.2)}
               initial="initial"

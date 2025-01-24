@@ -9,7 +9,7 @@ const NavLinks = [
   {
     id: 1,
     title: "Home",
-    link: "#",
+    link: "#Home",
   },
   {
     id: 2,
@@ -62,8 +62,20 @@ const social = [
 const Navbar = () => {
   const [isHamClick, setisHamClick] = useState(false);
 
+  const handleNavClick = (e) => {
+    setisHamClick(false);
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    window.scrollTo({
+      top: targetSection.offsetTop - document.querySelector('nav').offsetHeight, 
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <div className="bg-[#231f20] w-full fixed z-50">
+    <nav className="bg-[#231f20] w-full fixed z-50">
       <motion.div
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -97,7 +109,7 @@ const Navbar = () => {
             return (
               <a
                 href={link.link}
-                className="inline-block mx-4 text-md font-semibold text-white"
+                className="inline-block mx-4 text-md font-semibold text-white" onClick={handleNavClick}
               >
                 {link.title}
               </a>
@@ -127,7 +139,7 @@ const Navbar = () => {
             return (
               <a
                 href={link.link}
-                className="inline-block text-sm md:text-lg p-1 text-center hover:bg-slate-200"
+                className="inline-block text-sm md:text-lg p-1 text-center hover:bg-slate-200" onClick={handleNavClick}
               >
                 {link.title}
               </a>
@@ -136,7 +148,7 @@ const Navbar = () => {
 
           </div>}
      
-    </div>
+    </nav>
   );
 };
 

@@ -37,7 +37,7 @@ const Hero = () => {
         }
 ]
   return (
-    <div className='h-[300px] md:h-[500px] w-full bg-black flex justify-center items-center mt-[93px] md:mt-[100px] lg:mt-[120px]'>
+    <div className='h-[300px] md:h-[500px] w-full bg-black flex justify-center items-center mt-[93px] md:mt-[100px] lg:mt-[120px]' id='Home'>
         <img src={villaMain} alt='' className='h-full bg-cover w-full'/>
         <div className='container absolute z-10'>
         <SwiperWidjet data={data}/>
