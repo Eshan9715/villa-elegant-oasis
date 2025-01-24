@@ -30,3 +30,4 @@ export const SlideLeft = (delay) => {
     },
   };
 };
+//jnkjnbkjbkjk
