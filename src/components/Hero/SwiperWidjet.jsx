@@ -19,6 +19,7 @@ const SwiperWidjet = ({data}) => {
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
+          
         }}
         navigation={true}
         pagination={true}
@@ -27,6 +28,8 @@ const SwiperWidjet = ({data}) => {
         slidesPerView={1}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
+        freeMode: true
+        
       >
         {data?.map((d, index) => (
           <SwiperSlide key={index}><img src={d.img} alt='' className='h-[300px] md:h-[500px] bg-cover md:container'/></SwiperSlide>

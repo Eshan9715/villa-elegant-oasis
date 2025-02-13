@@ -13,6 +13,7 @@ const Footer = () => {
       variants={SlideLeft(0.2)}
       initial="initial"
       whileInView="animate"
+      className=""
     >
       <div className="container py-11" id="Contact-Us">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

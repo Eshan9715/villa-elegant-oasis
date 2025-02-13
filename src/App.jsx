@@ -13,6 +13,7 @@ import GalleryView from "./components/Gallery/GalleryView";
 import FAQPage from "./components/Faq/Faq";
 import b7 from './assets/whatsapp.png';
 import { Tooltip } from "@mui/material";
+import RoomRates from "./components/Accomodation/RoomRates";
 
 const App = () => {
   return (
@@ -28,9 +29,10 @@ const App = () => {
       <About />
       {/* <Brands /> */}
       <GalleryView/>
+      {/* <RoomRates/> */}
       <FAQPage/>
-      {/* <Services /> */}
       <Banner />
+      {/* <Services /> */}
       {/* <Banner2 />
       <Testimonial /> */}
       {/* <Newsletter /> */}
