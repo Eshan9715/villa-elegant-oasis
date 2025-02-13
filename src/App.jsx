@@ -13,11 +13,18 @@ import GalleryView from "./components/Gallery/GalleryView";
 import FAQPage from "./components/Faq/Faq";
 import b7 from './assets/whatsapp.png';
 import { Tooltip } from "@mui/material";
-import RoomRates from "./components/Accomodation/RoomRates";
+// import RoomRates from "./components/Accomodation/RoomRates";
+import {Helmet} from "react-helmet";
+
 
 const App = () => {
   return (
     <main className="overflow-x-hidden">
+    <Helmet>
+      <meta charSet="utf-8" />
+        <title>Villa Elgant Oasis</title>
+        <link rel="canonical" href="https://villa-elegant-oasis.netlify.app/" />
+    </Helmet>
     <div className="p-1 md:p-3 fixed bottom-0 right-0 z-20">
       <a href='https://wa.me/94762466890' target="_blank" rel="noopener noreferrer" >
         <Tooltip title="Chat on whatsapp" placement="left"><img src={b7} alt="" className="w-12 md:w-16 animate-bounce"/></Tooltip>
