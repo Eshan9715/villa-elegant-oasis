@@ -26,9 +26,13 @@ const Banner = () => {
                   >
                       <div className="flex flex-col justify-center w-full">
                       <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                      src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=B03%20Perth%20Paradise,%20Gurugoda,%20Horana%2012400+(My%20BusinesVILLA%20ELEGANT%20OASISs%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>          </div>
+                      src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Villa Elegant Oasis, B03 Perth Paradise, Gurugoda, Horana 12400&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+                      </div>
                   </motion.div>
         
+
+
           {/* text section */}
           
             <motion.p
