@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logor.png";
 import { FaPhone } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
 import { motion } from "framer-motion";
 import { SlideLeft } from "../../animation/animate";
 import { FaFacebook } from "react-icons/fa";
@@ -69,12 +69,18 @@ const Footer = () => {
             <h1 className="text-xl font-semibold">Contact us</h1>
             <ul className="text-sm font-normal space-y-4">
               <li className="flex items-center space-x-3">
-                <FaPhone />
+                <IoLogoWhatsapp />
                 <a href='https://wa.me/94762466890' target="_blank" rel="noopener noreferrer">+94762466890</a>
               </li>
               <li className="flex items-center space-x-3">
+                <FaPhone />
+                +94 741133623 |
+                +94 767673085
+
+              </li>
+              <li className="flex items-center space-x-3">
                 <IoMdMail />
-                <a href="mailto:info@villaelegantoasis.com">info@villaelegantoasis.com</a>
+                <a href="mailto:elegantoasis2@gmail.com">elegantoasis2@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <FaFacebook />

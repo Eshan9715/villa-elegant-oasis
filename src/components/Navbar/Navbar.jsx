@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
+
 
 const NavLinks = [
   {
@@ -43,7 +45,8 @@ const social = [
     id: 1,
     title: "Reserverations",
     link: "+94762466890",
-    icon: <CallIcon/>
+    icon: <IoLogoWhatsapp/>
+    
   },
   {
     id: 2,
@@ -56,6 +59,12 @@ const social = [
     title: "Info",
     link: "info@villaelegantoasis.com",
     icon: <MailIcon/>
+  },
+   {
+    id: 4,
+    title: "Contact",
+    link: "+94 741133623 | +94 767673085",
+    icon: <CallIcon/>
   }
   
 ];
@@ -97,7 +106,7 @@ const Navbar = () => {
                 className="inline-block text-xs font-normal text-slate-200"
               >
                 {link.title==='Reserverations'?  <a href='https://wa.me/94762466890' target="_blank" rel="noopener noreferrer">{link.link}</a> : 
-                link.title==='Info'? <a href="mailto:info@villaelegantoasis.com">info@villaelegantoasis.com</a> :
+                link.title==='Info'? <a href="mailto:elegantoasis2@gmail.com">elegantoasis2@gmail.com</a> :
                 <a href="https://maps.app.goo.gl/9d2KN6syMPrYCHpc8" target="_blank" rel="noopener noreferrer">{link.link}</a>}
               </p></div>
             );
