@@ -23,7 +23,7 @@ const App = () => {
     <Helmet>
       <meta charSet="utf-8" />
         <title>Villa Elgant Oasis</title>
-        <link rel="canonical" href="https://villa-elegant-oasis.netlify.app/" />
+        <link rel="canonical" href="https://villaelegantoasis.com/" />
     </Helmet>
     <div className="p-1 md:p-3 fixed bottom-0 right-0 z-20">
       <a href='https://wa.me/94762466890' target="_blank" rel="noopener noreferrer" >
